@@ -1,10 +1,10 @@
 # Switchmap-NG Poller Documentation Website
 
-[![N|Solid](static/img/markdown/misc/logo.png)](https://github.com/PalisadoesFoundation/docs-poller)
+[![N|Solid](static/img/markdown/misc/logo.png)](https://github.com/PalisadoesFoundation/switchmap-ng-poller)
 
 # Installation
 
-This document provides instructions on how to set up and start a running instance of docs-poller website on your local system. The instructions are written to be followed in sequence so make sure to go through each of them step by step without skipping any sections.
+This document provides instructions on how to set up and start a running instance of switchmap-ng-poller website on your local system. The instructions are written to be followed in sequence so make sure to go through each of them step by step without skipping any sections.
 
 # Table of Contents
 
@@ -25,7 +25,7 @@ This document provides instructions on how to set up and start a running instanc
 
 # Prerequisites for Developers
 
-The contents of the `docs-poller` repo is used to automatically create [the Switchmap-NG Poller Documentation website](https://docs-poller.switchmap-ng.io/). The automation uses [Docusaurus](https://docusaurus.io/docs/), a modern static website generator.
+The contents of the `switchmap-ng-poller` repo is used to automatically create [the Switchmap-NG Poller Documentation website](https://switchmap-ng-poller.switchmap-ng.io/). The automation uses [Docusaurus](https://docusaurus.io/docs/), a modern static website generator.
 
 We recommend that you follow these steps before beginning development work in this repository.
 
@@ -46,8 +46,8 @@ $ yarn -version
 **Note:** Please bear in mind that to install docusaurus in your system, a Node.js version 16.14 or above (which can be checked by running node -v) is required. Other requirements that pertains to the installation of docusaurus can be found [here](https://docusaurus.io/docs/installation)
 
 ```console
-$ git clone https://github.com/PalisadoesFoundation/docs-poller.git
-$ cd docs-poller
+$ git clone https://github.com/PalisadoesFoundation/switchmap-ng-poller.git
+$ cd switchmap-ng-poller/docs
 $ yarn add docusaurus
 ```
 
