@@ -143,4 +143,5 @@ jobs:
         if: github.event.pull_request.base.ref != 'develop'
         run: |
           echo "Error: Pull request target branch must be 'develop'. Please refer PR_GUIDELINES.md"
+          echo "Error: Close this PR and try again."
           exit 1
