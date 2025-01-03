@@ -106,8 +106,7 @@ jobs:
             docs/docusaurus.config.js
             docs/babel.config.js
             docs/tsconfig.json
-            .coderabbit.yaml
-
+            requirements.txt
       - name: List all changed unauthorized files
         if: steps.changed-unauth-files.outputs.any_changed == 'true' || steps.changed-unauth-files.outputs.any_deleted == 'true'
         env:
