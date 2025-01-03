@@ -85,12 +85,20 @@ jobs:
             .github/**
             package.json
             package-lock.json
+            yaml.lock
             .gitignore
             .nojekyll
             CODEOWNERS
             LICENSE
+            CODE_OF_CONDUCT.md
+            CODE_STYLE.md
+            CONTRIBUTING.md
+            DOCUMENTATION.md
+            INSTALLATION.md
+            ISSUE_GUIDELINES.md
+            PR_GUIDELINES.md
+            README.md            
             .coderabbit.yaml
-            ./*.md
             docs/CNAME
             docs/static/CNAME
             docs/package.json
