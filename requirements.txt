@@ -14,9 +14,6 @@ pandas
 mock
 pytest
 
-# Docstring Parser
-docstring_parser
-
 # Other
 more-itertools
 
