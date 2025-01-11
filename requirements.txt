@@ -4,9 +4,6 @@ PyYAML
 # Posting
 requests
 
-# Polling
-easysnmp
-
 # Data and Database
 pandas
 
