@@ -20,15 +20,6 @@ env:
   CODECOV_UNIQUE_NAME: CODECOV_UNIQUE_NAME-${{ github.run_id }}-${{ github.run_number }}
 
 jobs:
-  Python-Format-Checker:
-    name: Python Black Format Checker
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: rickstaa/action-black@v1
-        with:
-          black_args: ". --check"
-        
   Code-Quality-Checks:
     name: Performs linting, formatting, type-checking, checking for different source and target branch
     runs-on: ubuntu-latest
