@@ -1,30 +1,27 @@
 #!/usr/bin/env python3
-# -*- coding: UTF-8 -*-
 """Script to encourage more efficient coding practices.
 
 Methodology:
 
-    Analyses the `lib` and `test` directories to find files that exceed a
-    pre-defined number of lines of code.
+Analyses the `lib` and `test` directories to find files that exceed a
+pre-defined number of lines of code.
 
-    This script was created to help improve code quality by encouraging
-    contributors to create reusable code.
+This script was created to help improve code quality by encouraging
+contributors to create reusable code.
 
-NOTE:
+Notice:
 
-    This script complies with our python3 coding and documentation standards
-    and should be used as a reference guide. It complies with:
+This script complies with our python3 coding and documentation standards
+and should be used as a reference guide. It complies with:
 
-        1) Pylint
-        2) Pydocstyle
-        3) Pycodestyle
-        4) Flake8
+    1) Pylint
+    2) Pydocstyle
+    3) Pycodestyle
+    4) Flake8
 
-    Run these commands from the CLI to ensure the code is compliant for all
-    your pull requests.
-
+Run these commands from the CLI to ensure the code is compliant for all
+your pull requests.
 """
-
 # Standard imports
 import os
 import sys
