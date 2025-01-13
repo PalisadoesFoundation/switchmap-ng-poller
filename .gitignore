@@ -1,3 +1,69 @@
+#############################################################################
+# <Developer Section>
+# Placed to reduce the risk of contributors uploading sensitive data
+#############################################################################
+
+# Ignore hidden environment files / directory
+*.switchmap
+
+# Ignore files in these directories and ALL subdirectories
+var/**
+etc/**
+
+# There are exceptions
+!.gitignore
+
+#############################################################################
+# Miscellaneous
+#############################################################################
+
+.DS_Store
+
+#############################################################################
+# Ignore VS Code files
+#############################################################################
+
+.vscode/
+.vscode/*
+
+#!.vscode/settings.json
+#!.vscode/tasks.json
+#!.vscode/launch.json
+#!.vscode/extensions.json
+#!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+#############################################################################
+# Ignore all vim / vi temporary files
+#############################################################################
+.idea*
+
+### Vim ###
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
+
+*.swp
+*.un~
+*~
+.#*
+
+#############################################################################
+# Python
+#############################################################################
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

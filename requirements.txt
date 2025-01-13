@@ -1,0 +1,22 @@
+# Miscellaneous
+PyYAML
+
+# Posting
+requests
+
+# Data and Database
+pandas
+
+# Testing
+mock
+pytest
+
+# Other
+more-itertools
+
+#Linting and formatting
+flake8
+flake8-docstrings
+pydocstyle
+black
+docstring_parser
