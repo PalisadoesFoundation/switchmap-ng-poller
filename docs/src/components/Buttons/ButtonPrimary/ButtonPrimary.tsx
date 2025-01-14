@@ -3,7 +3,7 @@ import styles from './PrimaryButton.module.css';
 
 type PrimaryButtonProps = {
   label: string;
-  onClick: () => void;
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
   disabled?: boolean;
 };
 
@@ -13,6 +13,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({ label, onClick, disabled 
       className={`${styles.primaryButton} ${disabled ? styles.disabled : ''}`} 
       onClick={onClick} 
       disabled={disabled}
+      role="button"
     >
       {label}
     </button>

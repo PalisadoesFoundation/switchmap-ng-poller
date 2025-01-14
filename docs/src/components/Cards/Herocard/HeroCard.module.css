@@ -63,10 +63,6 @@
     .cardDescription {
       font-size: 0.9rem;
     }
-
-    .card{
-        flex-direction: row;
-    }
   }
   
   @media (max-width: 768px) {

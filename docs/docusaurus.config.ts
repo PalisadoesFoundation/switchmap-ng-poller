@@ -8,7 +8,7 @@ const config: Config = {
   title: 'Switchmap-NG Poller Documentation',
   tagline: 'Start your open source journey here',
   favicon: 'img/favicon_palisadoes.ico',
-  
+
   url: 'https://docs-poller.switchmap-ng.io',
   baseUrl: '/',
   deploymentBranch: 'gh-pages',
@@ -48,79 +48,13 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
-    // navbar: {
-    //   title: 'My Site',
-    //   logo: {
-    //     alt: 'My Site Logo',
-    //     src: 'img/logo.svg',
-    //   },
-    //   items: [
-    //     {
-    //       type: 'docSidebar',
-    //       sidebarId: 'tutorialSidebar',
-    //       position: 'left',
-    //       label: 'Tutorial',
-    //     },
-    //     {
-    //       href: 'https://github.com/facebook/docusaurus',
-    //       label: 'GitHub',
-    //       position: 'right',
-    //     },
-    //   ],
-    // },
-    // footer: {
-    //   style: 'dark',
-    //   links: [
-    //     {
-    //       title: 'Docs',
-    //       items: [
-    //         {
-    //           label: 'Tutorial',
-    //           to: '/docs/intro',
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: 'Community',
-    //       items: [
-    //         {
-    //           label: 'Stack Overflow',
-    //           href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-    //         },
-    //         {
-    //           label: 'Discord',
-    //           href: 'https://discordapp.com/invite/docusaurus',
-    //         },
-    //         {
-    //           label: 'X',
-    //           href: 'https://x.com/docusaurus',
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       title: 'More',
-    //       items: [
-    //         {
-    //           label: 'GitHub',
-    //           href: 'https://github.com/facebook/docusaurus',
-    //         },
-    //       ],
-    //     },
-    //   ],
-    //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-    // },
+  
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
 
-  stylesheets: [
-    {
-      href: './src/css/custom.css', // Path to the custom stylesheet
-      type: 'text/css',        // MIME type
-    },
-  ],
 };
 
 export default config;

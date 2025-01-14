@@ -30,7 +30,7 @@
     --ifm-secondary-button-hover-color : #d4d4d9;
     --ifm-text-color: #ffffff;
     --ifm-text-color-black: #000000;
-    -docusaurus-progress-bar-color: var(--ifm-color-primary);
+    --docusaurus-progress-bar-color: var(--ifm-color-primary);
     --secondary-blue-900: #001c63;
     --sidebar-bg-color: #f3f4f6;
     --secondary-blue-500: #3970fd;
@@ -81,7 +81,6 @@
     --ifm-contrast-foreground-value: 70%;
     --ifm-contrast-background-dark-value: 70%;
     --ifm-contrast-foreground-dark-value: 90%;
-    --ifm-color-primary: #3578e5;
     --ifm-color-secondary: #ebedf0;
     --ifm-color-success: #00a400;
     --ifm-color-info: #54c7ec;

@@ -55,19 +55,26 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
           <img src={Logo} alt="Switchmap-NG" className={styles.logoImage} />
           <span className={styles.logoText}>Switchmap-NG</span>
         </div>
-        <button className={styles.closeButton} onClick={onClose} aria-label="Close Menu">
+        <button 
+          className={styles.closeButton} 
+          onClick={(e: React.MouseEvent<HTMLButtonElement>) => onClose()} 
+          aria-label="Close Menu"
+          aria-expanded={isOpen}
+        >
           ×
         </button>
       </div>
 
       <div className={styles.NavContent}>
-        <nav className={styles.navigation}>
+      <nav className={styles.navigation} role="navigation" aria-label="Main">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
               className={styles.navLink}
               onClick={onClose}
+              role="menuitem"
+              tabIndex={isOpen ? 0 : -1}
             >
               {link.label}
             </Link>
@@ -82,8 +89,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}
+              aria-label={href.includes('github') ? 'Visit our GitHub' : 'Visit our YouTube'}
             >
-              <Icon size={24} />
+             <Icon size={24} aria-hidden="true" />
             </a>
           ))}
         </div>

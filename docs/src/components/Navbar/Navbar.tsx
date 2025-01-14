@@ -21,14 +21,14 @@ type IconLink = {
 };
 
 const navLinks: NavLink[] = [
-  { path: "/", label: "General" },
-  { path: "", label: "Web Guide" },
-  { path: "", label: "Poller Guide" },
-  { path: "", label: "API Guide" },
+  { path: "https://docs.switchmap-ng.io/", label: "General" },
+  { path: "https://docs-web.switchmap-ng.io/", label: "Web Guide" },
+  { path: "https://docs-poller.switchmap-ng.io/", label: "Poller Guide" },
+  { path: "https://docs-api.switchmap-ng.io/", label: "API Guide" },
 ];
 
 const iconLinks: IconLink[] = [
-  { href: "https://https://github.com/PalisadoesFoundation.com", src: github, alt: "GitHub" },
+  { href: "https://github.com/PalisadoesFoundation", src: github, alt: "GitHub"  },
   { href: "https://www.youtube.com/@PalisadoesOrganization", src: youtube, alt: "YouTube" },
 ];
 
@@ -64,9 +64,9 @@ const Navbar: React.FC = () => {
               <img src={icon.src} alt={icon.alt} />
             </a>
           ))}
-          <a href="#" onClick={() => console.log('Toggle theme')}>
-            <img src={sun} alt="Toggle Theme" />
-          </a>
+          {/* <a href="#" onClick={() => console.log('Toggle theme')}>
+            <img src={sun} alt="Tog" />
+          </a> */}
         </div>
       </nav>
 

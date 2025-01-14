@@ -4,19 +4,20 @@ import styles from './HeroCard.module.css';
 type HeroCardProps = {
   title: string;
   description: string;
-  imageUrl?: string; // Optional: URL for a card image
-  children?: React.ReactNode; // Optional: For adding custom content inside the card
+  children?: React.ReactNode; 
+  isLoading?: boolean;
+
 };
 
-const HeroCard: React.FC<HeroCardProps> = ({ title, description, imageUrl, children }) => {
+const HeroCard: React.FC<HeroCardProps> = ({ title, description, children }) => {
   return (
-    <div className={styles.card}>
-      <div className={styles.cardContent}>
+    <article className={styles.card} role="article">
+       <div className={styles.cardContent} aria-label={title}>
         <h2 className={styles.cardTitle}>{title}</h2>
         <p className={styles.cardDescription}>{description}</p>
         {children && <div className={styles.cardChildren}>{children}</div>}
       </div>
-    </div>
+    </article>
   );
 };
 
