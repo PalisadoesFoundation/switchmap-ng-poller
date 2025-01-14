@@ -1,0 +1,87 @@
+.heroContainer {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--ifm-white-background-color);
+  padding: 6rem 1.5rem;
+  font-family: var(--ifm-font-family-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.heading {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.text {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.lottifilesContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.hero-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.cardContainer {
+  margin-top: 2rem;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .hero-image lottie-player {
+    height: 36rem !important;
+    width: 27rem !important;
+  }
+  
+  .cardContainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image lottie-player {
+    height: 24rem !important;
+    width: 18rem !important;
+  }
+}

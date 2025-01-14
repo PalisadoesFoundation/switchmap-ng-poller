@@ -1,0 +1,33 @@
+/* Secondary.module.css */
+.SecondaryButton {
+    background-color: var(--ifm-secondary-button-color); /* Primary blue color */
+    color: var(--ifm-text-color-black); /* White text */
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1rem;
+    padding: 0.75rem 1.5rem;
+    width: 10.625rem;
+    height: 2.875rem;
+    border: none;
+    border-radius: 0.375rem; /* Rounded corners */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.SecondaryButton:hover {
+    background-color: var(--ifm-secondary-button-hover-color); /* Darker blue for hover */
+}
+
+.SecondaryButton:active {
+    background-color: var(--ifm-secondary-button-color); /* Even darker blue for active */
+    transform: scale(1); /* Reset scaling */
+}
+
+.SecondaryButton.disabled {
+    background-color: #cccccc; /* Grey for disabled state */
+    cursor: not-allowed;
+}
+
+.SecondaryButton:disabled {
+    background-color: #cccccc; /* Grey for disabled state */
+}
