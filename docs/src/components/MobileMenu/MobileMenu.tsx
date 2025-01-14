@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './MobileMenu.module.css';
 import { Github, Youtube } from 'lucide-react';
-// @ts-ignore
-import Logo from "/home/nishant/LOCAL_DISK_D/GSoC/talawa/switchmap-ng-poller/docs/static/img/favicon_palisadoes.ico";
+
+const Logo = require('@site/static/img/favicon_palisadoes.ico').default;
 
 type MobileMenuProps = {
   isOpen: boolean;

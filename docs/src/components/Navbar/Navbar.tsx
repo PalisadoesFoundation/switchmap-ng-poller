@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
-// @ts-ignore
-import Logo from "/home/nishant/LOCAL_DISK_D/GSoC/talawa/switchmap-ng-poller/docs/static/img/favicon_palisadoes.ico";
-import "../../css/custom.css";
-// @ts-ignore
-import github from "../../../static/img/github.png";
-// @ts-ignore
-import youtube from "../../../static/img/youtube.png";
-// @ts-ignore
-import sun from "../../../static/img/sun.png";
 import MobileMenu from '../MobileMenu/MobileMenu';
+import "../../css/custom.css";
+
+const Logo = require('@site/static/img/favicon_palisadoes.ico').default;
+const github = require('@site/static/img/github.png').default;
+const youtube = require('@site/static/img/youtube.png').default;
+const sun = require('@site/static/img/sun.png').default;
 
 type NavLink = {
   path: string;

@@ -7,8 +7,8 @@ import css from "./src/css/custom.css"
 const config: Config = {
   title: 'Switchmap-NG Poller Documentation',
   tagline: 'Start your open source journey here',
-  favicon: '/home/nishant/LOCAL_DISK_D/GSoC/talawa/switchmap-ng-poller/docs/static/img/favicon_palisadoes.ico',
-
+  favicon: 'img/favicon_palisadoes.ico',
+  
   url: 'https://docs-poller.switchmap-ng.io',
   baseUrl: '/',
   deploymentBranch: 'gh-pages',
